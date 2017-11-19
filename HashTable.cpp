@@ -36,8 +36,24 @@ int HashTable::countBucket(int index) const
 	return Table[index].getSize();
 }
 
+int HashTable::search(Book b) const
+{
+	string key = b.get_title() + b.get_author();
+	int index = hash(key);
+	if (Table[index].isEmpty()) return -1;
+	else if (!Table[index].search(b)) return -1;
+	else return index;
+}
 
+void HashTable::insert(Book b)
+{
+	string key = b.get_title() + b.get_author();
+	int index = hash(key);
+	if(Table[index].isEmpty())
+		insert(b);
+	else if()
+}
 
-//counts the number of Books at this index
-//returns the count
-//pre: 0<= index < SIZE
+//inserts a new book into the table
+//calls the hash function on the key to determine
+//the correct bucket

@@ -10,6 +10,8 @@
 #include <string>
 #include "BST.h"
 #include "Book.h"
+#include "HashTable.h"
+
 using namespace std;
 
 class HashTable {
