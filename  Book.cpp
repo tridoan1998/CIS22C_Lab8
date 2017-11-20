@@ -1,10 +1,10 @@
-//============================================================================
-// Name        : Lab7.cpp
-// Author      :
-// Version     :
-// Copyright   : Your copyright notice
-// Description : Hello World in C++, Ansi-style
-//============================================================================
+/*
+ * List.h
+ *
+ *	Khang Vinh Tran, Tri Doan
+ *  CIS 22C, Lab 8
+*/
+
 #include <iostream>
 #include <iomanip>
 #include <string>

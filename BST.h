@@ -2,7 +2,7 @@
  * List.h
  *
  *	Khang Vinh Tran, Tri Doan
- *  CIS 22C, Lab6
+ *  CIS 22C, Lab 8
 */
 
 # ifndef BST_H_

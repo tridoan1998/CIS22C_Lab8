@@ -1,9 +1,10 @@
 /*
- * HashTable.h
+ * List.h
  *
- *  Created on: Nov 15, 2017
- *      Author: $$$$$$$$$$$$$$$$$$$$
- */
+ *	Khang Vinh Tran, Tri Doan
+ *  CIS 22C, Lab 8
+*/
+
 #ifndef HASHTABLE_H_
 #define HASHTABLE_H_
 

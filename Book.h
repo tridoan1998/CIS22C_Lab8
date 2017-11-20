@@ -1,9 +1,10 @@
 /*
- * Book.h
+ * List.h
  *
- *  Created on: Nov 7, 2017
- *      Author: $$$$$$$$$$$$$$$$$$$$
- */
+ *	Khang Vinh Tran, Tri Doan
+ *  CIS 22C, Lab 8
+*/
+
 
 #ifndef BOOK_H_
 #define BOOK_H_
