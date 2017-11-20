@@ -63,32 +63,19 @@ void HashTable::printBucket(ostream& out, int index) const
 {
 	assert(0 <= index && index <= SIZE);
 	Table[index].inOrderPrint(out);
-
 }
 
-//Prints all the books at index according to inOrderPrint
- //pre: 0<= index < SIZE
- //Should print according to the following formula:
- //Prints each book at that index in the format:
- //<title> by <author>
- //$<X.XX>
- //ISBN#: <isbn>
- //followed by a blank line
 
 void HashTable::printTable(ostream& out) const
 {
-
+	out << "Books in the Catalogue:" << endl;
+	for (int i = 0; i < SIZE; i++)
+	{
+		if (!Table[i].isEmpty())
+		{
+			out << "Group " << i+1 << endl;
+			out << Table[i].getRoot() << endl;
+			out << "+" << countBucket(i) - 1 <<" more similar book(s)" << endl << endl << endl;
+		}
+	}
 }
-//Prints the first book at each index
-//along with a count of the total books
-//at each index by calling count_bucket
-//as a helper function
-//Prints in the format:
-//Books in the Catalogue:
-//<new line>
-//Group <bucket>
-//<title> by <author>
-//$<X.XX>
-//ISBN: <isbn>
-//+<number of elements at this index> -1 more similar book(s)
-//<new line><new line><new line>
